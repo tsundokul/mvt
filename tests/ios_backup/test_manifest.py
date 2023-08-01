@@ -16,7 +16,7 @@ class TestManifestModule:
     def test_manifest(self):
         m = Manifest(target_path=get_ios_backup_folder())
         run_module(m)
-        assert len(m.results) == 3721
+        assert len(m.results) == 3722
         assert len(m.timeline) == 5881
         assert len(m.detected) == 0
 
